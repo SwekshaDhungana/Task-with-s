@@ -1,0 +1,54 @@
+.task-page{
+    background-color: #e6d9e2;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-container{
+    height: 400px;
+    width: 500px;
+    background-color: rgb(190, 152, 152);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+}
+.task-name{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(107, 48, 48);
+}
+.task-div{
+    display: flex;
+    flex-direction: column;
+  
+}
+.tasks-ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    overflow: auto;
+}
+.tasks-ul li{
+    font-size: 30px;
+    padding-top: 10px;
+    height: 4rem;
+    width: 25rem;
+    background-color: rgb(245, 243, 243);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+ ::-webkit-scrollbar {
+    width: 8px; /* Adjust scrollbar width. You can find custom scrollbar on the internet */
+  } 
+
+ 
+  

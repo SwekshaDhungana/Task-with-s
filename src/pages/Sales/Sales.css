@@ -1,0 +1,237 @@
+.sales-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh ;
+    background-color: #e6d9e2;
+    /* padding: 20px;  */
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../../images/hero-two.jpg") no-repeat center center/cover;
+}
+
+/* Overlay for Better Readability */
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero Content */
+.hero-content {
+    text-align: center;
+    color: white;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Hero Button */
+.hero-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #80d0f0, #27a9dd);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-button:hover {
+    background: linear-gradient(90deg,#3dc8ff,
+        #1c88b3);
+}
+    /* .sales-text{
+        margin-top: 100px;
+        color: rgb(150, 9, 9);
+    }
+    .hero-image{
+        display: flex;
+        padding-top: 84px;
+    }
+    .hero-image-main{
+        border:none;
+        border-radius: 20px 0 0 20px;
+        height: 70vh;
+        width: 60vw;
+    }
+    .hero-right{
+        height: 70vh;
+        width: 34rem;
+        background: linear-gradient(360deg, #ebb5c9,#a45755, #c8868a, #f2b5ae);
+        border: none;
+        border-radius: 0 20px 20px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-auto-rows: minmax(150px, auto);
+        gap: 0px; 
+        overflow: hidden;
+               }
+     */
+    /* .hero-right-photo{
+        height: 300px;
+        width: 300px;
+    } */
+    /* .right-img{
+        height:200px;
+            width: 200px;
+            border: none;
+                border-radius: 10px;
+    }
+    .one{
+        transform: translate(5px, 15px);
+     
+    
+    }
+    .two{
+        
+        transform: translate(-10px, 15px);
+       
+    }
+    .three{
+        transform: translate(-22px, 15px);
+       
+    }
+    .four{
+        transform: translate(-22px, -10px);
+    }
+    .five{
+        transform: translate(5px, -10px);
+        
+    }
+    .six{
+        transform: translate(-22px, -10px)
+    } */
+        /* background-color: #fffab8; */
+    .sales-nav{
+        display: flex;
+        align-items: center;
+       width: 70rem;
+       border: none;
+       border-radius: 12px;
+        height: 4rem;
+        background-color: transparent;
+        margin-top: 2rem;
+    }
+
+    .sales-list{
+        margin-left: 20px;
+        display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       gap: 10rem;
+    }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: rgb(179, 178, 178);
+                }
+
+@media (max-width: 1024px) {
+    .sales-container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .hero {
+        height: 80vh; /* Reduce height for smaller screens */
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem; /* Adjust heading */
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .sales-nav {
+        width: 90%;
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-content {
+        max-width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .sales-list {
+        gap: 3rem;
+        flex-wrap: wrap; /* Allow items to wrap */
+    }
+
+    .sales-nav {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-button {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+
+    .sales-list {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+    }
+
+    .sales-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+}
